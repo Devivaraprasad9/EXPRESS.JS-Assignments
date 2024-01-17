@@ -1,0 +1,40 @@
+1. What are the request methods in http?
+These are the nine HTTP methods typically associated with RESTful web development and the Hypertext Transfer Protocol and most commonly used by RESTful API designers:
+GET.
+PUT.
+POST.
+DELETE.
+PATCH.
+HEAD.
+OPTIONS.
+TRACE.
+CONNECT.
+The 1.0 version of the Hypertext Transfer Protocol, issued way back in 1996, only defined three HTTP verbs: GET, POST and HEAD.
+
+2. Find the out the difference between GET and POST methods?
+A)
+
+ GET :-
+
+1)In GET method we can not send large amount of data rather limited data of some number of characters is sent because the request parameter is appended into the URL. 
+2)GET request is comparatively better than Post so it is used more than the Post request.
+3)GET requests are only used to request data (not modify)
+4)GET request is comparatively less secure because the data is exposed in the URL bar.
+5)Request made through GET method are stored in Browser history.
+6)GET method request can be saved as bookmark in browser.
+7)Request made through GET method are stored in cache memory of Browser. 
+
+ POST :-
+
+1)n POST method large amount of data can be sent because the request parameter is appended into the body.
+2)POST request is comparatively less better than Get method, so it is used less than the Get request.
+3)POST requests can be used to create and modify data.
+4)POST request is comparatively more secure because the data is not exposed in the URL bar.
+5)Request made through POST method is not stored in Browser history.
+6)POST method request can not be saved as bookmark in browser.
+7)Request made through POST method are not stored in cache memory of Browser.
+
+
+3. How to send the files as response in express js?
+A)The res. sendFile() function transfers the file at the given path and it sets the Content-Type response HTTP header field based on the filename extension. Parameter: The path parameter describes the path and the options parameter contains various properties like maxAge, root, etc and fn is the callback function.
+__dirname is an environment variable that tells you the absolute path of the directory containing the currently executing file.
